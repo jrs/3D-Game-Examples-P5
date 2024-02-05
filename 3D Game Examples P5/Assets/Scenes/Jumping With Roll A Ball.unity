@@ -2073,7 +2073,7 @@ GameObject:
   - component: {fileID: 1572594848}
   - component: {fileID: 1572594847}
   m_Layer: 0
-  m_Name: Cube (8)
+  m_Name: Check Point Block
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2120,7 +2120,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9d423c0723a804c2486c7c2e9732b64b, type: 2}
+  - {fileID: 2100000, guid: cfbd4d49ec5e64782ae4b6a9fd2ee317, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2159,7 +2159,7 @@ Transform:
   m_GameObject: {fileID: 1572594846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -0.75, z: 11}
+  m_LocalPosition: {x: 0.5, y: -0.75, z: 11}
   m_LocalScale: {x: 5, y: 7, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
