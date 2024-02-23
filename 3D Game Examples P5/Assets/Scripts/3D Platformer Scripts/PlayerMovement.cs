@@ -54,4 +54,9 @@ public class PlayerMovement : MonoBehaviour
             IsOnGround = true;
         }
     }
+
+    public bool IsPlayerOnGround()
+    {
+        return IsOnGround;
+    }
 }
