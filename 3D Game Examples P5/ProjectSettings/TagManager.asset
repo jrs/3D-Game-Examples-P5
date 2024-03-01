@@ -9,6 +9,7 @@ TagManager:
   - Endpoint
   - Dead Zone
   - Collectible
+  - Door
   layers:
   - Default
   - TransparentFX

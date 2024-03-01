@@ -12,21 +12,25 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerIsRunning = true;
+        //timerIsRunning = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeRemaining > 0)
+        if(timerIsRunning)
         {
-            timeRemaining -= Time.deltaTime;
-            DisplayTime(timeRemaining);
-        }
-        else
-        {
-            timeRemaining = 0;
-            timerIsRunning = false;
+            if(timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
+            }
+            else
+            {
+                timeRemaining = 0;
+                timerIsRunning = false;
+                GameObject.Find("Game Session").GetComponent<SceneFader>().FadeInUI();
+            }
         }
     }
 
@@ -37,5 +41,11 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void StartGameTimer()
+    {
+        timerIsRunning = true;
+        timeRemaining = 20;
     }
 }
